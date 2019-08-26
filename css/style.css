@@ -2,7 +2,7 @@
 @charset "UTF-8";
 
 body {
-  padding:100px 0 0 0;
+  padding: 0;
   margin: 0;
   background: #edf0f1;
 }
@@ -12,33 +12,34 @@ body, input, button {
 }
 
 header {
+	width: auto;
   height: 80px;
-  position: fixed;
-  padding:15px;
-  top:0;
-  left:0;
+  padding: 15px;
+  top: 0;
+  left: 0;
   z-index: 5;
-  background:#25b99a;
+  background-color: #25b99a;
   box-shadow: 0px 2px 4px rgba(44,62,80,0.15);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  overflow: hidden;
 }
 
 header input{
-  width:100%;
-  height:50px;
-  float:left;
-  color:#FFF;
-  font-size:15px;
-  font-weight:400;
-  text-indent:18px;
-  padding: 0 60px 0 0;
-  background:rgba(255,255,255,0.2);
+  width: 100%;
+  height: 50px;
+  float: left;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  text-indent: 18px;
+  padding: 0;
+  background: rgba(255,255,255,0.2);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  border-top-right-radius:25px;
-  border-bottom-right-radius:25px; 
-  border:0px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px; 
+  border: 0px;
   box-shadow: none;
   outline: none;
   
@@ -70,18 +71,18 @@ header input::-o-input-placeholder {
 }
 
 header button {
-  width:50px;
-  height:50px;
+  width: 50px;
+  height: 50px;
   position: absolute;
-  top:15px;
-  right:15px;
+  top: 15px;
+  right: 15px;
   z-index: 2;
   border-radius: 25px;
-  background:#fff;
-  border:0px;
+  background: #fff;
+  border: 0px;
   box-shadow: none;
-  outline:none;
-  cursor:pointer;
+  outline: none;
+  cursor: pointer;
   
   -webkit-appearance:none;
   -moz-appearance:none;
@@ -91,12 +92,9 @@ header button {
 }
 
 header button svg {
-  width:25px;
-  height:25px;
-  position:absolute;
-  top:50%;
-  left:50%;
-  margin:-12px 0 0 -12px;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
 }
 
 header button svg .fill {
@@ -104,31 +102,32 @@ header button svg .fill {
 }
 
 .container {
-  width:100%;
+  width: 100%;
+  padding: 15px;
   float: left;
-  padding:15px;
+  box-sizing: border-box;
 }
 
 ul.todo {
-  width:100%;
+  width: 99%;
   float: left;
   padding: 0;
 }
 
 ul.todo li {
-  width:96%;
-  min-height:50px;
+  width: 100%;
+  min-height: 50px;
   float: left;
   font-size: 14px;
   font-weight: 500;
   color: #444;
   line-height: 50px;
-  padding-left:10px;
-  background:#FFF;
-  border-radius:5px;
+  padding-left: 10px;
+  background: #FFF;
+  border-radius: 5px;
   position: relative;
-  box-shadow:0px 1px 2px rgba(44,62,80,0.10);
-  margin:0 0 10px 0;
+  box-shadow: 0px 1px 2px rgba(44,62,80,0.10);
+  margin: 0 0 10px 0;
   list-style: none;
 }
 
